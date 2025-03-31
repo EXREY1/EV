@@ -200,6 +200,25 @@ ol {
         width: 100%;
         max-width: 300px;
     }
+    @media (max-width: 768px) {
+        header img {
+            width: 100%; /* Изменяем ширину логотипа на 100% */
+            max-width: 300px; /* Максимальная ширина логотипа */
+        }
+    
+        .header-buttons {
+            flex-direction: column; /* Кнопки располагаем вертикально */
+        }
+    
+        .button {
+            width: 100%; /* Кнопки занимают всю ширину */
+            margin: 5px 0; /* Убираем боковые отступы */
+        }
+    
+        section {
+            padding: 15px; /* Добавляем отступы для секций */
+        }
+    }
 
     .header-buttons .button {
         display: block; 
