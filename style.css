@@ -197,23 +197,47 @@ ol {
 
 @media (max-width: 768px) {
     header img {
-            width: 100%; /* Изменяем ширину логотипа на 100% */
-            max-width: 300px; /* Максимальная ширина логотипа */
-        }
-    
-        .header-buttons {
-            flex-direction: column; /* Кнопки располагаем вертикально */
-        }
-    
-        .button {
-            width: 100%; /* Кнопки занимают всю ширину */
-            margin: 5px 0; /* Убираем боковые отступы */
-        }
-    
-        section {
-            padding: 15px; /* Добавляем отступы для секций */
-        }
+        width: 100%; /* Изменяем ширину логотипа на 100% */
+        max-width: 300px; /* Максимальная ширина логотипа */
     }
+
+    .header-buttons {
+        flex-direction: column; /* Кнопки располагаем вертикально */
+    }
+
+    .button {
+        width: 100%; /* Кнопки занимают всю ширину */
+        margin: 5px 0; /* Убираем боковые отступы */
+    }
+
+    section {
+        padding: 15px; /* Добавляем отступы для секций */
+    }
+
+    .parent {
+        display: grid; /* Используем сетку для преимуществ */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Гибкая сетка */
+        gap: 10px; /* Промежуток между элементами */
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6 {
+        background-color: #f0f0f0; /* Фон для блоков преимуществ */
+        padding: 10px;
+        text-align: center; /* Центрируем текст */
+        border-radius: 5px; /* Скругляем углы */
+    }
+
+    .info div {
+        display: flex; /* Используем flexbox для информации */
+        align-items: center; /* Центрируем по вертикали */
+        margin-bottom: 10px; /* Отступ между строками */
+    }
+
+    #map {
+        width: 100%; /* Ширина карты на 100% */
+        height: 300px; /* Высота карты */
+    }
+}
 
     .header-buttons .button {
         display: block; 
