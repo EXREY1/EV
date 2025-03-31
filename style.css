@@ -195,13 +195,8 @@ ol {
     transform: scale(1.1);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     header img {
-        width: 100%;
-        max-width: 300px;
-    }
-    @media (max-width: 768px) {
-        header img {
             width: 100%; /* Изменяем ширину логотипа на 100% */
             max-width: 300px; /* Максимальная ширина логотипа */
         }
@@ -233,4 +228,4 @@ ol {
     h2 {
         font-size: 1.5em; 
     }
-}
+
