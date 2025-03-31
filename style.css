@@ -195,25 +195,34 @@ ol {
     transform: scale(1.1);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     header img {
-        width: 100%; /* Логотип занимает всю ширину экрана на мобильных устройствах */
-        max-width: 300px; /* Максимальная ширина логотипа */
+        max-width: 120px;
     }
-
-    .header-buttons {
-        flex-direction: column; /* Кнопки располагаются вертикально на мобильных устройствах */
-        align-items: center; /* Центрирование кнопок */
+    
+    h1 {
+        font-size: 1.3rem;
     }
-
-    .service-buttons {
-        flex-direction: column; /* Кнопки услуг располагаются вертикально на мобильных устройствах */
-        align-items: center; /* Центрирование кнопок услуг */
-    }
-
+    
     .button {
-        width: 90%; /* Кнопки занимают 90% ширины экрана на мобильных устройствах */
-        text-align: center; /* Центрирование текста в кнопках */
+        padding: 8px 10px;
+        font-size: 0.8rem;
+        min-width: 80px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+    
+    .parent > div {
+        font-size: 0.8rem;
+        padding: 10px 5px;
+    }
+    
+    .navig img {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
     }
 }
 
